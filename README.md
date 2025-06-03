@@ -39,8 +39,8 @@ Follow these steps to clone and run the project on your local system:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/FlowChartBuilder.git
-cd FlowChartBuilder
+git clone https://github.com/your-username/TodoList.git
+cd TodoList
 ```
 ### 2. Install Dependencies
 
