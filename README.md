@@ -9,9 +9,6 @@ A simple and user-friendly ToDo List application built with React, Vite, and Hoo
 ✅ **Add Tasks**  
 Easily add new tasks to your list.
 
-✅ **Mark Tasks as Complete**  
-Toggle tasks between complete and incomplete status.
-
 ✅ **Delete Tasks**  
 Remove tasks you no longer need.
 
@@ -39,8 +36,8 @@ Follow these steps to clone and run the project on your local system:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/FlowChartBuilder.git
-cd FlowChartBuilder
+git clone https://github.com/your-username/TodoList.git
+cd TodoList
 ```
 ### 2. Install Dependencies
 
