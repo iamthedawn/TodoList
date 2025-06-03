@@ -1,12 +1,65 @@
-# React + Vite
+# 📋 ToDo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly ToDo List application built with React, Vite, and Hooks. Tasks are saved in local storage for persistent usage across sessions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+✅ **Add Tasks**  
+Easily add new tasks to your list.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ **Mark Tasks as Complete**  
+Toggle tasks between complete and incomplete status.
+
+✅ **Delete Tasks**  
+Remove tasks you no longer need.
+
+✅ **Persistent Storage**  
+Tasks are stored in your browser's local storage and remain even after refreshing or closing the page.
+
+✅ **Responsive UI**  
+Clean and simple user interface that works on different screen sizes.
+
+---
+
+## 🛠️ Built With
+
+- **React** – For building the UI.
+- **Vite** – Fast development environment and build tool.
+- **Hooks** – To manage state and lifecycle logic.
+- **Local Storage** – For data persistence.
+
+---
+
+## 🛠️ Getting Started
+
+Follow these steps to clone and run the project on your local system:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/FlowChartBuilder.git
+cd FlowChartBuilder
+```
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+### 3. Run the Development Server
+```bash
+npm run dev
+```
+### Visit http://localhost:5173 in your browser to view the app.
+
+## 💡 How it works
+- Tasks are stored in local storage using the useEffect hook to sync updates.
+
+- The app uses useState for managing the tasks’ state.
+
+- All logic for adding, deleting, and toggling tasks is handled through functional components and hooks.
+
+
+
+
