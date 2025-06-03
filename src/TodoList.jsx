@@ -4,16 +4,25 @@ import { DeleteOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
 const TodoList = () => {
-  const [todoItems, setTodoItems] = useState([]);
+  const [todoItems, setTodoItems] = useState(
+    localStorage.getItem("list").split(",")
+  );
   const [item, setItem] = useState("");
 
   const handleAddItem = () => {
+    localStorage.setItem("list", [...todoItems, item]);
     setTodoItems((prev) => [...prev, item]);
   };
 
   const handleRemoveItem = (idx) => {
     let newArr = [...todoItems];
     setTodoItems(
+      newArr.filter((_, index) => {
+        return index != idx;
+      })
+    );
+    localStorage.setItem(
+      "list",
       newArr.filter((_, index) => {
         return index != idx;
       })
