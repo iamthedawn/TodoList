@@ -10,8 +10,13 @@ const TodoList = () => {
   const [item, setItem] = useState("");
 
   const handleAddItem = () => {
-    localStorage.setItem("list", [...todoItems, item]);
-    setTodoItems((prev) => [...prev, item]);
+    if (item.trim() != "") {
+      localStorage.setItem("list", [...todoItems, item]);
+      setTodoItems((prev) => [...prev, item]);
+      setItem("");
+    }
+
+
   };
 
   const handleRemoveItem = (idx) => {
