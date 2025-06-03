@@ -1,0 +1,24 @@
+.inputBar {
+  width: 10rem !important;
+}
+.todoContainer {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  overflow-y: scroll !important;
+}
+.addItemContainer {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+.todoItemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+}
