@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const TodoList = () => {
   const [todoItems, setTodoItems] = useState(
-    localStorage.getItem("list").split(",")
+    localStorage?.getItem("list")?.split(",") || []
   );
   const [item, setItem] = useState("");
 
