@@ -15,8 +15,6 @@ const TodoList = () => {
       setTodoItems((prev) => [...prev, item]);
       setItem("");
     }
-
-
   };
 
   const handleRemoveItem = (idx) => {
@@ -26,12 +24,18 @@ const TodoList = () => {
         return index != idx;
       })
     );
-    localStorage.setItem(
-      "list",
-      newArr.filter((_, index) => {
-        return index != idx;
-      })
-    );
+
+    
+    newArr.filter((_, index) => {
+      return index != idx;
+    }).length < 1
+      ? localStorage.removeItem("list")
+      : localStorage.setItem(
+          "list",
+          newArr.filter((_, index) => {
+            return index != idx;
+          })
+        );
   };
 
   return (
